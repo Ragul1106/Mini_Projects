@@ -1,149 +1,130 @@
-// //mini project 1 : Multiplication Table Generator
+//mini project 1 : Multiplication Table Generator
 
-// const number = parseInt(prompt("Enter a number for multiplication table:"));
+const number = parseInt(prompt("Enter a number for multiplication table:"));
 
-// if (!isNaN(number)) {
-//     console.log(`Multiplication Table for ${number}:`);
-//     for (let i = 1; i <= 10; i++) {
-//         console.log(`${number} x ${i} = ${number * i}`);
-//     }
-// } else {
-//     console.log("Invalid input! Please enter a valid number.");
-// }
-
-
-// //mini project 2 : simpleLogin System
-
-// const storedUsername = "ragul";
-// const storedPassword = "password123";
-
-// const username = prompt("Enter your username:");
-// const password = prompt("Enter your password:");
-
-// if (username === storedUsername && password === storedPassword) {
-//     console.log("Login successful!");
-// } else {
-//     console.log("Invalid credentials!");
-// }
-
-// //mini project 3 : temperature Converter
-
-// let celsius = 25; 
-
-// let fahrenheit = (celsius * 9/5) + 32;
-
-// console.log(`${celsius}°C is equal to ${fahrenheit}°F`);
+if (!isNaN(number)) {
+    console.log(`Multiplication Table for ${number}:`);
+    for (let i = 1; i <= 10; i++) {
+        console.log(`${number} x ${i} = ${number * i}`);
+    }
+} else {
+    console.log("Invalid input! Please enter a valid number.");
+}
 
 
-// //mini project 4 : traffic Light System
+//mini project 2 : simpleLogin System
 
-// const trafficLight = prompt("Enter a traffic light color (red, yellow, green):").toLowerCase();
+const storedUsername = "ragul";
+const storedPassword = "password123";
 
-// if (trafficLight === "red") {
-//     console.log("Stop!");
-// } else if (trafficLight === "yellow") {
-//     console.log("Slow down!");
-// } else if (trafficLight === "green") {
-//     console.log("Go!");
-// } else {
-//     console.log("Invalid color!");
-// }
+const username = prompt("Enter your username:");
+const password = prompt("Enter your password:");
 
+if (username === storedUsername && password === storedPassword) {
+    console.log("Login successful!");
+} else {
+    console.log("Invalid credentials!");
+}
 
-// //mini project 5 : vote Eligibility Checker
+//mini project 3 : temperature Converter
 
-// let citizen = "India"; 
-// let age = 20; 
+let celsius = 25; 
 
-// if (age >= 18 && citizen === "India") {
-//     console.log("✅ Eligible to Vote");
-// } else {
-//     console.log("❌ Not Eligible to Vote");
-// }
+let fahrenheit = (celsius * 9/5) + 32;
+
+console.log(`${celsius}°C is equal to ${fahrenheit}°F`);
 
 
-// //mini project 6 : online food ordering system
+//mini project 4 : traffic Light System
+
+const trafficLight = prompt("Enter a traffic light color (red, yellow, green):").toLowerCase();
+
+if (trafficLight === "red") {
+    console.log("Stop!");
+} else if (trafficLight === "yellow") {
+    console.log("Slow down!");
+} else if (trafficLight === "green") {
+    console.log("Go!");
+} else {
+    console.log("Invalid color!");
+}
 
 
-// let restaurantName = "Tasty Bites";
-// let orderNumber = 101;
-// let foodItems = ["Burger", "Fries", "Coke"];
-// let totalPrice = 350;
-// let isDelivered = false;
+//mini project 5 : vote Eligibility Checker
+
+let citizen = "India"; 
+let age = 20; 
+
+if (age >= 18 && citizen === "India") {
+    console.log("✅ Eligible to Vote");
+} else {
+    console.log("❌ Not Eligible to Vote");
+}
 
 
-// console.log("📌 Order Summary:");
-// console.log("Restaurant:", restaurantName);
-// console.log("Order Number:", orderNumber);
-// console.log("Food Items:", foodItems.join(", "));
-// console.log("Total Price: ₹" + totalPrice);
-// console.log("Delivery Status:", isDelivered ? "✅ Delivered" : "🚚 Out for Delivery");
+//mini project 6 : online food ordering system
 
 
-// isDelivered = true;
-// console.log("🚀 Delivery status updated:", isDelivered ? "✅ Delivered" : "🚚 Out for Delivery");
+let restaurantName = "Tasty Bites";
+let orderNumber = 101;
+let foodItems = ["Burger", "Fries", "Coke"];
+let totalPrice = 350;
+let isDelivered = false;
 
 
-// foodItems.push("Pizza");
-// totalPrice += 250;
-// console.log("🛒 Added Pizza. New Total: ₹" + totalPrice);
+console.log("📌 Order Summary:");
+console.log("Restaurant:", restaurantName);
+console.log("Order Number:", orderNumber);
+console.log("Food Items:", foodItems.join(", "));
+console.log("Total Price: ₹" + totalPrice);
+console.log("Delivery Status:", isDelivered ? "✅ Delivered" : "🚚 Out for Delivery");
 
 
-// let itemToRemove = "Fries";
-// let itemIndex = foodItems.indexOf(itemToRemove);
-// if (itemIndex !== -1) {
-//     foodItems.splice(itemIndex, 1);
-//     totalPrice -= 100;
-//     console.log("❌ Removed Fries. New Total: ₹" + totalPrice);
-// }
+isDelivered = true;
+console.log("🚀 Delivery status updated:", isDelivered ? "✅ Delivered" : "🚚 Out for Delivery");
 
 
-// console.log("\n📌 Updated Order Summary:");
-// console.log("Food Items:", foodItems.join(", "));
-// console.log("Total Price: ₹" + totalPrice);
-// console.log("Delivery Status:", isDelivered ? "✅ Delivered" : "🚚 Out for Delivery");
+foodItems.push("Pizza");
+totalPrice += 250;
+console.log("🛒 Added Pizza. New Total: ₹" + totalPrice);
 
 
-// //mini project 7 : quiz App
-
-// let question1 = "What is the capital of India?";
-// let options1 = ["A) Mumbai", "B) Delhi", "C) Kolkata", "D) Chennai"];
-// let correctAnswer1 = "B";
-// let userAnswer1 = "B"; 
-
-// let question2 = "Which is the largest planet in our solar system?";
-// let options2 = ["A) Earth", "B) Venus", "C) Jupiter", "D) Mars"];
-// let correctAnswer2 = "C";
-// let userAnswer2 = "C"; 
-
-// let question3 = "Who is known as the Father of Computers?";
-// let options3 = ["A) Albert Einstein", "B) Charles Babbage", "C) Isaac Newton", "D) Alan Turing"];
-// let correctAnswer3 = "B";
-// let userAnswer3 = "B"; 
+let itemToRemove = "Fries";
+let itemIndex = foodItems.indexOf(itemToRemove);
+if (itemIndex !== -1) {
+    foodItems.splice(itemIndex, 1);
+    totalPrice -= 100;
+    console.log("❌ Removed Fries. New Total: ₹" + totalPrice);
+}
 
 
-// let score = 0;
+console.log("\n📌 Updated Order Summary:");
+console.log("Food Items:", foodItems.join(", "));
+console.log("Total Price: ₹" + totalPrice);
+console.log("Delivery Status:", isDelivered ? "✅ Delivered" : "🚚 Out for Delivery");
 
-// console.log("📌 Quiz Results:");
 
-// console.log("\nQ1: " + question1);
-// console.log(options1.join("\n"));
-// console.log("Your Answer: " + userAnswer1 + (userAnswer1 === correctAnswer1 ? " ✅ Correct" : " ❌ Wrong"));
-// if (userAnswer1 === correctAnswer1) score++;
+//mini project 7 : quiz App
 
-// console.log("\nQ2: " + question2);
-// console.log(options2.join("\n"));
-// console.log("Your Answer: " + userAnswer2 + (userAnswer2 === correctAnswer2 ? " ✅ Correct" : " ❌ Wrong"));
-// if (userAnswer2 === correctAnswer2) score++;
+let question1 = "What is the capital of India?";
+let options1 = ["A) Mumbai", "B) Delhi", "C) Kolkata", "D) Chennai"];
+let correctAnswer1 = "B";
+let userAnswer1 = "B"; 
 
-// console.log("\nQ3: " + question3);
-// console.log(options3.join("\n"));
-// console.log("Your Answer: " + userAnswer3 + (userAnswer3 === correctAnswer3 ? " ✅ Correct" : " ❌ Wrong"));
-// if (userAnswer3 === correctAnswer3) score++;
+let score = 0;
 
-// console.log("\n🎯 Final Score: " + score + "/3");
+console.log("📌 Quiz Results:");
 
-// //mini project 8 : sum of digit of a number
+console.log("\nQ1: " + question1);
+console.log(options1.join("\n"));
+console.log("Your Answer: " + userAnswer1 + (userAnswer1 === correctAnswer1 ? " ✅ Correct" : " ❌ Wrong"));
+if (userAnswer1 === correctAnswer1) score++;
+
+
+console.log("\n🎯 Final Score: " + score + "/1");
+console.log("🎉 Thank you for participating!");
+
+//mini project 8 : sum of digit of a number
 
 let number1 = parseInt(prompt("Enter a positive number: "), 10);
 
