@@ -124,9 +124,9 @@ if (userAnswer1 === correctAnswer1) score++;
 console.log("\n🎯 Final Score: " + score + "/1");
 console.log("🎉 Thank you for participating!");
 
-//mini project 8 : sum of digit of a number
+mini project 8 : sum of digit of a number
 
-let number1 = parseInt(prompt("Enter a positive number: "), 10);
+let number1 = parseInt(prompt("Enter a positive number: "));
 
 
 let sumOfDigits = 0;
